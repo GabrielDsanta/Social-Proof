@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background:url(./images/bg-pattern-top-desktop.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    padding: 7%;
+}
+
+.column-top, .column-bottom{
+    display: flex;
+    justify-content: flex;
+}
+
+.column-top{
+    margin-bottom: 3.5rem;
+}
+
+.div-image-colton, .div-image-anne, .div-image-irene{
+    display: flex;
+}
+
+.div-title-10k{
+    margin-bottom: 1rem;
+}
+
+.title-10k{
+    font-size: 50px;
+    color: hsl(300, 43%, 22%);
+}
+
+.pair-10k{
+    color: hsl(303, 10%, 53%);
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.div-stars{
+    margin-top: 1.5rem;
+    margin-left: 6rem;
+}
+
+.stars-image{
+    margin-right: .5rem;
+}
+
+.five-stars-line-one{
+    display: flex;
+    background: hsl(300, 24%, 96%);
+    padding: 1.2rem 4.5rem 1.2rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    width:fit-content;
+}
+
+.span-star-line-one, .span-star-line-two, .span-star-line-tree{
+    margin-left: 1.5rem;
+    margin-top: 2px;
+}
+
+.five-stars-line-two{
+    display: flex;
+    background: hsl(300, 24%, 96%);
+    padding: 1.2rem 4.5rem 1.2rem 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    border-radius: .3rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    width:fit-content;
+}
+
+.five-stars-line-tree{
+    display: flex;
+    background: hsl(300, 24%, 96%);
+    padding: 1.2rem 4.5rem 1.2rem 1.5rem;
+    margin-left: 6.5rem;
+    border-radius: .3rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    width:fit-content;
+}
+
+.div-colton{
+    background: hsl(300, 43%, 22%);
+    padding: 2rem 2rem 0 2rem;
+    border-radius: .5rem;
+    margin-right: 1.5rem;
+    max-height: 240px;
+}
+
+.div-irene{
+    background: hsl(300, 43%, 22%);
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    margin-right: 1.5rem;
+    max-height: 235px;
+}
+
+.div-anne{
+    background: hsl(300, 43%, 22%);
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    max-height: 235px;
+}
+
+.icon-colton, .icon-irene, .icon-anne{
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+}
+
+.title-anne-wallace, .title-irene-roberts, .title-colton-smith{
+    color: #FFF;
+    font-size: 16px;
+    margin-top: .5rem;
+    margin-bottom: 3px;
+}
+
+.pair-title{
+    color: hsl(333, 80%, 67%);
+    font-size: 15px;
+}
+
+.div-pair-irene, .div-pair-anne, .div-pair-colton{
+    line-height: 1.5rem;
+    color: #FFF;    
+}
+
+.div-title-colton, .div-title-irene, .div-title-anne{
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width:1220px){
+    .five-stars-line-two, .five-stars-line-tree{
+        margin-left: 0;
+    }
+
+    .five-stars-line-two{
+        padding-right: 2.5rem;
+    }
+
+    .pair-title{
+        font-size: 10px;
+    }
+
+    .div-pair-irene, .div-pair-anne, .div-pair-colton{
+        line-height: 1rem;    
+    }
+}
+
+@media only screen and (max-width:1092px){
+    .five-stars-line-one, .five-stars-line-two, .five-stars-line-tree{
+        font-size: 12px;
+    }
+
+    .five-stars-line-two{
+        padding-right: 3rem;
+    }
+}
+
+@media only screen and (max-width:1036px){
+    .column-top, .column-bottom{
+        flex-direction: column;
+    }
+
+    .column-top{
+        text-align: center;
+    }
+
+    .div-stars{
+        margin-left: 0;
+    }
+
+    .div-colton{
+        padding-bottom: 3rem;
+    }
+
+    .div-anne{
+        max-width: 340px;
+    }
+
+}
+
+@media only screen and (max-width:536px){
+    .five-stars-line-one, .five-stars-line-two, .five-stars-line-tree{
+        max-width: 300px;
+        display: block;
+        margin-left: 5rem;
+        padding: 1rem 2rem;
+    }
+
+    .span-star-line-one{
+        display: flex;
+        margin-top: .5rem;
+        padding-right: 1.4rem;
+    }
+
+    .span-star-line-two{
+        display: flex;
+        margin-top: .5rem;
+    }
+
+    .span-star-line-tree{
+        display: flex;
+        margin-top: .5rem;
+        padding-right: 1.2rem;
+    }
+}
